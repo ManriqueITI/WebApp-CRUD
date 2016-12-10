@@ -1,0 +1,12 @@
+$def with (registro)
+
+<h1><center>CARRERAS UNIVERSITARIAS</h1>
+
+<ul>
+$for post in registro:
+    <li>
+        <a href="/view/$registro.id">$registro.title</a> 
+        from $datestr(post.posted_on) 
+        <a href="/editar/$registro.id">EDITAR</a>
+    </li>
+</ul>

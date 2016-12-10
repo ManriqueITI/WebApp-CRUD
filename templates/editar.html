@@ -1,0 +1,13 @@
+$def with (registro, form)
+
+<h1>EDITAR $form.d.carrera</h1>
+
+<form action="" method="registro">
+$:form.render()
+</form>
+
+
+<h2>ELIMINAR REGISTRO</h2>
+<form action="/eliminar/$registro.id" method="registro">
+    <input type="ELIMINAR" value="ELIMINAR REGISTRO"/>
+</form>
